@@ -1,0 +1,26 @@
+$text-color: #9fa4a9;
+$item-text-color: #242424;
+$button-color: #ffc900;
+
+
+
+@import "normalize";
+@import "layout";
+@import "elements";
+
+
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+	font:400 14px/1.57 'Open Sans', sans-serif;
+    color: $text-color;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
