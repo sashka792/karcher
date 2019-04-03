@@ -11,9 +11,26 @@ input[type="button"],
 button,
 .ba-button{
 	display: inline-block;
+	font: 700 12px/1 'Roboto', sans-serif;
+	letter-spacing: 0.24em;
+	color: #292929;
+	background-color: #ffc80a;
+	text-transform: uppercase;
+	padding: 19px 55px;
+	border-radius: 25.5px;
+	text-decoration: none;
+	margin-right: 18px;
 	&:hover{
-
+		
 	}
+}
+.ba-offer-info>a:first-child {
+	margin-right: 19px;
+}
+.ba-button--more{
+	background-color: #fff;
+	border: 2px solid #f6f6f6;
+	padding: 19px 32px;
 }
 input[type="text"],
 input[type="email"],

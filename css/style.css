@@ -1,12 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@font-face {
+  font-family: 'Arvo';
+  src: url("../font/arvo.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/arvo.eot?#iefix") format("embedded-opentype"), url("../font/arvo.woff2") format("woff2"), url("../font/arvo.woff") format("woff"), url("../font/arvo.ttf") format("truetype"), url("../font/arvo.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'Arvo-Bold';
+  src: url("../font/arvobold.ttf.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/arvobold.ttf.eot?#iefix") format("embedded-opentype"), url("../font/arvobold.woff2") format("woff2"), url("../font/arvobold.woff") format("woff"), url("../font/arvobold.ttf") format("truetype"), url("../font/arvobold.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import url("https://fonts.googleapis.com/css?family=Arvo");
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -586,7 +600,24 @@ input[type="submit"],
 input[type="button"],
 button,
 .ba-button {
-  display: inline-block; }
+  display: inline-block;
+  font: 700 12px/1 'Roboto', sans-serif;
+  letter-spacing: 0.24em;
+  color: #292929;
+  background-color: #ffc80a;
+  text-transform: uppercase;
+  padding: 19px 55px;
+  border-radius: 25.5px;
+  text-decoration: none;
+  margin-right: 18px; }
+
+.ba-offer-info > a:first-child {
+  margin-right: 19px; }
+
+.ba-button--more {
+  background-color: #fff;
+  border: 2px solid #f6f6f6;
+  padding: 19px 32px; }
 
 input[type="text"],
 input[type="email"],
@@ -603,10 +634,85 @@ body {
   font: 400 14px/1.57 'Open Sans', sans-serif;
   color: #9fa4a9; }
 
+h3 {
+  font: 400 36px/1.3 'Arvo', serif;
+  color: #292929; }
+
 /* Layout */
 .ba-container {
   padding-left: 20px;
   padding-right: 20px;
-  max-width: 1200px; }
+  max-width: 1160px; }
+
+.ba-container-inner {
+  max-width: 830px;
+  margin: 0 auto; }
+
+.ba-header-bar {
+  margin-top: 30px;
+  margin-left: 80px;
+  padding-right: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.ba-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0; }
+  .ba-menu li {
+    list-style: none; }
+  .ba-menu a {
+    font: 700 12px/1 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #9fa3a7;
+    text-decoration: none;
+    padding-left: 60px;
+    letter-spacing: 0.22em; }
+
+.ba-offer-info {
+  padding: 21.6% 14%; }
+  .ba-offer-info .ba-offer-title {
+    letter-spacing: 0.011em;
+    margin-bottom: 20px; }
+  .ba-offer-info .ba-offer-text {
+    margin-bottom: 35px;
+    line-height: 22px;
+    max-width: 347px; }
+
+.ba-offer-pic {
+  max-width: 118%;
+  margin-left: -85px;
+  padding-top: 28%; }
+
+.ba-scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px auto; }
+
+.ba-scroll:hover {
+  opacity: 0.5; }
+
+.ba-advantages__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .ba-advantages__about img {
+    position: relative;
+    width: 50px;
+    height: 49px; }
+  .ba-advantages__about img:before {
+    border: 2px solid red;
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 60px;
+    color: #ffc80a; }
 
 /*# sourceMappingURL=style.css.map */
