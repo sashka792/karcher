@@ -21,7 +21,6 @@ $button-color: #ffc900;
 		 url('../font/arvobold.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
-
 @import "normalize";
 @import "layout";
 @import "elements";
@@ -34,6 +33,10 @@ $button-color: #ffc900;
 body{
 	font:400 14px/1.57 'Open Sans', sans-serif;
     color: $text-color;
+}
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+	padding: 0;
 }
 h3{
 	font: 400 36px/1.3 'Arvo', serif;
@@ -76,7 +79,7 @@ h3{
 }
 
 .ba-offer-info{
-	padding: 21.6% 14%;
+	padding: 28% 14% 0;
 	.ba-offer-title{
 		letter-spacing: 0.011em;
 		margin-bottom: 20px;
@@ -89,32 +92,91 @@ h3{
 	
 }
 .ba-offer-pic {
-	max-width: 118%;
-	margin-left: -85px;
+	// max-width: 118%;
 	padding-top: 28%;
 }
 
 .ba-scroll{
 	display: flex;
-	margin: 0px auto;
+	margin: 78px auto 0;
 }
 .ba-scroll:hover{
 	opacity: 0.5;
 }
-
+.ba-advantages {
+	padding: 187px 0 170px;
+	&__info{
+		max-width: 401px;
+		margin-left: auto;
+		padding: 3px 0 0 15px;
+		p{
+			
+			padding-top: 16px;
+			padding-left: 1px;
+			letter-spacing: 0.01em;
+			line-height: 1.9;
+		}
+	}
+	
+}
 .ba-advantages__about{
 	display: flex;
+	padding: 0 130px 0 57px;
+	position: relative;
+	&--1::after{
+		content: '';
+		position: absolute;
+		top: 174px;
+		left: 66px;
+		background-color: #d1d1d1;
+		width: 319px;
+		height: 1px;
+		display: block;
+	}
+	&--2{
+		padding: 95px 0 0 69px;
+	}
 	img{
+		bottom: 10px;
+		left: 2px;
 		position: relative;
 		width: 50px;
 		height: 49px;
 	}
-	img:before{
-		border: 2px solid red;
-		position: absolute;
+	img::before{
 		content: '';
-		width: 60px;
-		height: 60px;
-		color: #ffc80a;
+		position: relative;
+		background-color: #ffc900;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%; 
+	}
+	.ba-advantages__about-icon{
+		position: relative;
+		bottom: 20px;
+		left: -6px;
+		width: 38px;
+		height: 52px;
+	}
+	.ba-advantages__descript{
+		padding: 2px 0 0 38px;
+		h4{
+			font: 400 21px/1.2 'Arvo',serif;
+			letter-spacing: 0.025em;
+			color: #353535;
+			padding-bottom: 12px;
+		}
+		p{
+			max-width: 228px;
+			line-height: 1.8;
+		}
+	}
+}
+
+.ba-spec{
+	padding: 125px 0 95px;
+	background: #fff url(../img/img2.jpg) no-repeat right center;
+	.spec-info__list{
+		list-style: none;
 	}
 }
