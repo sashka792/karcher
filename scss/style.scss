@@ -174,9 +174,16 @@ h3{
 }
 
 .ba-spec{
-	padding: 125px 0 95px;
+	padding: 115px 0 95px;
 	background: #fff url(../img/img2.jpg) no-repeat right center;
+	.ba-spec-info{
+		max-width: 401px;
+		margin-left: auto;
+		padding: 3px 0 0 15px;
+	}
 	.spec-info__list{
 		list-style: none;
+		margin: 26px 0 0 0;
+		padding: 0;
 	}
 }

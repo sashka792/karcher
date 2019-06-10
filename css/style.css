@@ -761,9 +761,15 @@ h3 {
       line-height: 1.8; }
 
 .ba-spec {
-  padding: 125px 0 95px;
+  padding: 115px 0 95px;
   background: #fff url(../img/img2.jpg) no-repeat right center; }
+  .ba-spec .ba-spec-info {
+    max-width: 401px;
+    margin-left: auto;
+    padding: 3px 0 0 15px; }
   .ba-spec .spec-info__list {
-    list-style: none; }
+    list-style: none;
+    margin: 26px 0 0 0;
+    padding: 0; }
 
 /*# sourceMappingURL=style.css.map */
