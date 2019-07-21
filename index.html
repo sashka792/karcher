@@ -9,6 +9,8 @@
 
 	<meta name="description" content="" />
 	<link rel="icon" href="favicon.png" />
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css" />
 
 </head>
@@ -28,8 +30,8 @@
 					</button> -->
 
 					<ul class="ba-menu">
-						<li><a href="#about">Описание </a></li>
-						<li><a href="#jury">Характеристики </a></li>
+						<li><a href="#about">Описание</a></li>
+						<li><a href="#jury">Характеристики</a></li>
 						<li><a href="#competitors">Отзывы</a></li>
 						<li><a href="#contact">Купить</a></li>
 					</ul>
@@ -124,7 +126,7 @@
 		<section class="ba-spec">
 			<div class="ba-container">
 				<div class="ba-row">
-					<div class="ba-col-large-6">
+					<div class="ba-col-large-7">
 						<div class="ba-spec-info">
 							<h3>Характеристики и спецификации</h3>
 							<ul class="ba-spec-info__list">
@@ -153,8 +155,8 @@
 					<div class="ba-col-large-12 ba-text-center">
 						<img src="img/blockq.svg" alt="" class="ba-reviews__blockq">
 						<p class="ba-reviews__content">
-							Очень хороший помощник в доме, убирает все начисто. 
-							Оставляю его на целый день, при этом заранее подготовив комнаты и ухожу. 
+							Очень хороший помощник в доме, убирает все начисто.
+							Оставляю его на целый день, при этом заранее подготовив комнаты и ухожу.
 							Возвращаясь домой - квартира вся чистая!
 						</p>
 						<div class="ba-reviews__customers">
@@ -167,7 +169,7 @@
 								</li>
 								<li>
 									<img src="img/Photo3.jpg" alt="">
-									
+
 								</li>
 								<li>
 									<img src="img/Photo4.jpg" alt="">
@@ -187,17 +189,38 @@
 			<!-- /.ba-container -->
 		</section>
 		<!-- /.ba-reviews -->
-		<section class="ba-order">
+		<section class="ba-purchase">
 			<div class="ba-container">
 				<div class="ba-row">
 					<div class="ba-col-large-6">
-						<h3 class="ba-order__product">Робот пылесос Karcher RC 4000</h3>
-						<p class="ba-order__price">39 199 ₽</p>
-						<img src="img/img1.jpg" alt="Karcher RC 4000" class="ba-order__pic">
+						<h3 class="ba-purchase__product">Робот пылесос Karcher RC 4000</h3>
+						<p class="ba-purchase__price">39 199 ₽</p>
+						<img src="img/img1.jpg" alt="Karcher RC 4000" class="ba-purchase__pic">
 					</div>
 					<!-- /.ba-col-large-6 -->
 					<div class="ba-col-large-6">
-						<form action="#" method="GET"></form>
+						<form action="#">
+							<fieldset>
+								<label>Имя и фамилия</label>
+								<input type="text" name="name" required>
+							</fieldset>
+							<fieldset>
+								<label>Электронная почта</label>
+								<input type="text" name="email" required>
+							</fieldset>
+							<fieldset>
+								<label>Телефон</label>
+								<input type="text" name="tel" required>
+							</fieldset>
+							<fieldset>
+								<label>Адрес доставки</label>
+								<input type="text" name="adress" required>
+							</fieldset>
+							<fieldset>
+								<label for="">Индекс</label>
+								<input type="text" name="adress" required>
+							</fieldset>
+						</form>
 					</div>
 					<!-- /.ba-col-large-6 -->
 				</div>
@@ -207,7 +230,52 @@
 		</section>
 		<!-- /.ba-order-form -->
 	</main>
-
+	<footer class="ba-footer">
+		<div class="ba-container">
+			<div class="ba-row">
+				<div class="ba-col-large-1">
+					<a href="index" class="ba-logo">
+						<img src="img/logo.png" class="ba-logo-footer" alt="Karcher">
+					</a>
+				</div>
+				<!-- /.ba-col-large-1-->
+				<div class="ba-col-large-9">
+					<nav class="ba-footer-nav">
+						<ul class="ba-footer-menu">
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Политика конфиденциальности</a></li>
+							<li><a href="#">О компании</a></li>
+						</ul>
+						<!-- /.ba-footer-menu -->
+					</nav>
+					<!-- /.ba-footer-nav -->
+				</div>
+				<!-- /.ba-col-large-9 -->
+				<div class="ba-col-large-2">
+					<div class="ba-social-media">
+							<i class="fab fa-vk"></i>
+							<i class="fab fa-facebook-f"></i>
+							<i class="fab fa-instagram"></i>
+							<i class="fab fa-twitter"></i>
+					</div>
+					<!-- /.ba-social-media -->
+				</div>
+				<!-- /.ba-col-large-2 -->
+			</div>
+			<!-- /.ba-row -->
+			<div class="ba-row">
+				<div class="ba-col-large-12">
+					<p class="ba-footer-copyright ba-text-center">
+						© 2016 Керхер Россия
+					</p>
+				</div>
+				<!-- /.ba-col-large-12 -->
+			</div>
+		</div>
+		<!-- /.ba-container -->
+	</footer>
+	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

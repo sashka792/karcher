@@ -24,6 +24,7 @@ $button-color: #ffc900;
 @import "normalize";
 @import "layout";
 @import "elements";
+@import "slick.scss";
 
 
 @import url('https://fonts.googleapis.com/css?family=Arvo');
@@ -81,11 +82,12 @@ h3{
 .ba-offer-info{
 	padding: 28% 14% 0;
 	.ba-offer-title{
-		letter-spacing: 0.011em;
+		letter-spacing: 0.01em;
 		margin-bottom: 20px;
 	}
 	.ba-offer-text{
 		margin-bottom: 35px;
+		margin-left: 5px;
 		line-height: 22px;
 		max-width: 347px;
 	}
@@ -173,25 +175,27 @@ h3{
 }
 
 .ba-spec{
-	padding: 115px 0 330px;
+	padding: 115px 0 255px;
 	background: #fff url(../img/img2.jpg) no-repeat right center;
 	.ba-spec-info{
 		max-width: 416px;
-		margin-left: auto;
+		margin-left: 145px;
 		padding: 1px 0 0 15px;
 	}
 	.ba-spec-info__list{
 		list-style: none;
 		margin: 29px 0 0 0;
 		padding: 0;
+		li{
+			margin-bottom: 7px;
+		}
 	}
 }
-
 
 // Reviews
 .ba-reviews {
 	&__blockq {
-		margin-bottom: 40px;
+		margin-bottom: 37px;
 	}
 	&__content {
 		font: 400 36px/1.27 'Arvo', serif;
@@ -211,13 +215,16 @@ h3{
 	}
 }
 
-.ba-order {
-	margin-top: 235px;
+// Purchase
+.ba-purchase {
+	margin-top: 238px;
+
 	&__product {
 		font-size: 32px;
 		width: 350px;
-		margin-left: 40px;
-		margin-bottom: 5px;
+		margin-left: 38px;
+		margin-bottom: 4px;
+		letter-spacing: 0.015em;
 	}
 	&__price {
 		font: 700 36px/1.27 'Roboto', serif;
@@ -225,9 +232,78 @@ h3{
 		font-size: 80px;
 		margin-left: 40px;
 		margin-bottom: 10px;
+		letter-spacing: 0.005em;
 	}
 	&__pic{
 		max-width: 105%;
 		margin-left: -15px;
+	}
+}
+
+fieldset{
+	border: none;
+	margin-bottom: 20px;
+	label{
+		width: 113px;
+		height: 10px;
+		color: #9fa3a7;
+		font-family: "Roboto", sans-serif;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 26.81px;
+		text-transform: uppercase;
+		/* Text style for "Имя и фами" */
+		letter-spacing: 1.39px;
+	}
+		
+	input{
+		width: 300px;
+		border: none;
+		display: block;
+		float: right;
+		border-bottom: 1px solid #cccccc;	
+	}
+	
+	input:focus {
+		outline: none;
+		background: white;
+	}
+}
+fieldset:first-child{
+	margin-top: 40px;
+}
+
+// Footer
+
+.ba-footer{
+	margin-top: 180px;
+	// img {
+		
+	// }
+	ul{
+		list-style: none;
+		margin: 0;
+		display: flex;
+		a{
+			text-decoration: none;
+  			text-transform: uppercase;
+  			justify-content: space-between;
+			font-weight: 900;
+			font-size: 12px;
+			color: #9fa3a7;
+			margin: 0 36px;
+		}
+	}
+	.ba-social-media {
+		display: flex;
+		justify-content: space-between;
+		font-size: 20px;
+	}
+	.ba-footer-copyright {
+		font-size: 12px;
+		font-weight: 900;
+		letter-spacing: 0.024em;
+		text-transform: uppercase;
+		margin-bottom: 30px;
 	}
 }
