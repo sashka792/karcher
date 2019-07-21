@@ -20,8 +20,11 @@ button,
 	border-radius: 25.5px;
 	text-decoration: none;
 	margin-right: 19px;
+	border: 2px solid #ffc80a;
 	&:hover{
-		
+		color: #ffc80a;
+		background-color: #292929;
+		border: 2px solid #ffc80a;
 	}
 }
 .ba-offer-info>a:first-child {
@@ -31,7 +34,13 @@ button,
 	background-color: #fff;
 	border: 2px solid #f6f6f6;
 	padding: 19px 32px;
+	&:hover{
+		color: #292929;
+		background-color: transparent;
+		border: 2px solid #ffc80a;
+	}
 }
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -40,11 +49,11 @@ input[type="tel"],
 textarea,
 select {
 	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
-	&:focus{
+	// &:focus{
 		
-	}
+	// }
 }
 
-textarea {
+// textarea {
 
-}
+// }
